@@ -1,3 +1,4 @@
+import typing as t
 import unicodedata
 
 from datetime import datetime
@@ -10,7 +11,7 @@ DIR_data = DIR_root / 'data'
 DIR_raw  = DIR_data / 'raw'
 DIR_pro  = DIR_data / 'processed'
 
-# Playoffs
+# Folder structure: Playoffs
 DIR_raw_po = DIR_raw / 'PO'
 DIR_pro_po = DIR_pro / 'PO'
 
@@ -22,7 +23,7 @@ DIR_pro_po_teams   = DIR_pro_po / 'teams'
 DIR_pro_po_players = DIR_pro_po / 'players'
 DIR_pro_po_league  = DIR_pro_po / 'league'
 
-# Regular season
+# Folder structure: Regular season
 DIR_raw_rs = DIR_raw / 'RS'
 DIR_pro_rs = DIR_pro / 'RS'
 
@@ -34,6 +35,7 @@ DIR_pro_rs_teams   = DIR_pro_rs / 'teams'
 DIR_pro_rs_players = DIR_pro_rs / 'players'
 DIR_pro_rs_league  = DIR_pro_rs / 'league'
 
+# Metaparameters
 GP_min = 3
 
 YEAR_start = 1996
@@ -61,29 +63,19 @@ def dob2age(dob: str, _format: str = "%m/%d/%Y") -> int:
                   (bdate.month, bdate.day))
 
 
-def year2rangestr(year: int) -> str:
-    next_year   = year + 1
-    next_suffix = str(next_year)[2:]
-    
-    return '{}-{}'.format(year, next_suffix)
+def year2rangestr(year1: int,
+                  year2: t.Optional[int] = None) -> str:
+    if year2 is None:
+        year2 = year1 + 1
 
-
-def year2filename(year: int, ext: str = 'csv') -> str:
-    year_range = year2rangestr(year)
-    
-    return '{}.{}'.format(year_range,
-                          ext)
-
-
-def total_year2rangestr(year1: int, year2: int) -> str:
     year2_suffix = str(year2)[2:]
     
     return '{}-{}'.format(year1, year2_suffix)
 
 
-def total_year2filename(year1: int, year2: int,
-                        ext: str = 'csv') -> str:
-    year_range = total_year2rangestr(year1, year2)
+def year2filename(year1: int,
+                  year2: t.Optional[int] = None,
+                  ext: str = 'csv') -> str:
+    _range = year2rangestr(year1, year2)
     
-    return '{}.{}'.format(year_range,
-                          ext)
+    return '{}.{}'.format(_range, ext)
