@@ -6,7 +6,7 @@ This projects stems from the necessity to better formalize the concept of clutch
 
 ## About the choice of PER
 
-Being clutch regards many more aspects of ball player than mere shooting: Assisting a teammate, grabbing a tough rebound, or blocking a shot on the other end of the floor are as valuable to the separate who wins from who goes home. For this reason, we discarded many metrics focused eccessively on the ability to shoot the ball: field goal percentage (FG%), effective field goal percentage (eFG%), true shooting percentage (TS%), to name a few. Instead, we were looking for a metric that would highlight the all-around impact of a player on the NBA court when the lanes get tight, fatigue shivers and the hands become slippery: [Player rating efficiency](https://en.wikipedia.org/wiki/Player_efficiency_rating) (PER), introduced by J. Hollinger during the 2006-07 season.
+Being clutch is about many more aspects of a ball player than mere shooting: Assisting a teammate, grabbing a tough rebound on the boards, or blocking a shot on the other end of the floor are just as valuable in separating who wins from who goes home. For this reason, we discarded many metrics focused excessively on the ability to shoot the ball: field goal percentage (FG%), effective field goal percentage (eFG%), true shooting percentage (TS%), to name a few. Instead, we were looking for a metric that would highlight a player's all-around impact on an NBA court when lanes get narrow, fatigue flickers and the hands get slippery: [Player rating efficiency](https://en.wikipedia.org/wiki/Player_efficiency_rating) (PER), introduced by J. Hollinger during the 2006-07 season, seemed the optimal choice.
 
 ## Folder structure
 
