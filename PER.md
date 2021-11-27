@@ -1,6 +1,8 @@
 # Player efficiency rating
 
-Player efficiency rating (**PER**) is an advanced NBA metric introduced in 2007 by John Hollinger as a methodology for comparing the relative accomplishments of players across leagues, as well as across years. While being commonly viewed as complex and unidentifiable, the idea is relatively simple: Produce a value for each player such that it captures their influence on the game in terms of **points per possession** (PPP). In fact, we should emphasize minute/possession due to the fact that the original intention of the metric was to to capture per minute effects of a player; however, the PER model transforms that into a per possession framework.
+Player efficiency rating (**PER**) is an advanced NBA metric introduced in 2007 by John Hollinger as a methodology for comparing the relative accomplishments of players across leagues, as well as across years. The idea is relatively simple, despite being commonly viewed as unidentifiable: Produce a value for each player such that it captures their influence on the game in terms of **points per possession** (PPP). In fact, we should emphasize minute/possession due to the fact that the original intention of the metric was to to capture per minute effects of a player; however, the PER model transforms that into a per possession framework.
+
+The rest of this write-up is organized as follows: First, we introduce the actual PER model as a combination of 12 terms and three scaling factor. Then, we dive into each of those terms analysing how it reflects a different aspect of the game of basketball.
 
 
 
