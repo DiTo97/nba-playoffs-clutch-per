@@ -18,6 +18,6 @@ Being clutch is about many more aspects of a ball game than mere shooting: Assis
     + *raw* contains all raw data about either players or teams in clutch time for all NBA seasons starting from the first available 1996-97 season. It also includes a table with the unique player Ids from [Basketball-Reference](https://www.basketball-reference.com/).
     + *processed* contains all derived data (i.e., league averages, PER rankings).
   
-    Both subfolders are split in regular season (*RS*) and playoffs (*PO*) data.
+    Both subfolders are split into regular season (*RS*) and playoffs (*PO*) data.
     
 - **notebooks** contains two Jupyter notebooks: one for the processing of raw data, and one for PER computation.
