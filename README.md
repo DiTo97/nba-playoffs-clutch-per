@@ -10,10 +10,14 @@ This project stems from the necessity to better formalize the concept of clutchn
 
 Being clutch is about many more aspects of a ball game than mere shooting: Assisting a teammate, grabbing a tough rebound on the boards, or blocking a shot on the other end of the floor are just as valuable in separating who wins from who goes home. For this reason, we discarded many metrics that would highly reward players that are focused excessively on the ability to shoot the ball: field goal percentage (FG%), effective field goal percentage (eFG%), true shooting percentage (TS%), to name a few. Instead, we were looking for a metric that would highlight a player's all-around impact on an NBA court when lanes get narrow, fatigue flickers and hands get slippery: [Player rating efficiency](https://en.wikipedia.org/wiki/Player_efficiency_rating) (PER), introduced by J. Hollinger during the 2006-07 season, is the optimal choice for the task.
 
+**Please note:** Pease have a look to [PER.md](PER.md), for a deep breakdown of the PER metric.
+
 ## Folder structure
 
 - **data**:
-    + *raw* contains all raw data about either players or teams in clutch time for all NBA playoffs starting from the first available 1996-97 season. It also includes a table with the unique player Ids from [Basketball-Reference](https://www.basketball-reference.com/).
-    + *processed* contains all derived data (i.e., league averages). The final CSV table with the ranking of the most clutch players in the NBA playoffs by PER can be found in the *PER* subfolder.
+    + *raw* contains all raw data about either players or teams in clutch time for all NBA seasons starting from the first available 1996-97 season. It also includes a table with the unique player Ids from [Basketball-Reference](https://www.basketball-reference.com/).
+    + *processed* contains all derived data (i.e., league averages, PER rankings).
+  
+    Both subfolders are split in regular season (*RS*) and playoffs (*PO*) data.
     
 - **notebooks** contains two Jupyter notebooks: one for the processing of raw data, and one for PER computation.
