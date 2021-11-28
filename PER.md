@@ -20,7 +20,7 @@ where <img src="https://render.githubusercontent.com/render/math?math=tm"> and <
 
 Most other terms should be familiar to people with a decent experience in basketball, as they are all commonly registered in NBA box scores. The model looks torturous at first glance; however, it is not all that bad. Later, we will break it down term by term.
 
-Secondly, a **pace adjustment**, <img src="https://render.githubusercontent.com/render/math?math=\gamma"> is performed to allow for fair comparisons between up-tempo and down-tempo teams in the league. This adjustment is given by:
+Secondly, a **pace adjustment** -- hereafter referred to as <img src="https://render.githubusercontent.com/render/math?math=\gamma"> for brevity -- is computed to allow for fair comparisons of the PER between up-tempo and down-tempo teams in the league. This adjustment is given by:
 
 <img src="https://render.githubusercontent.com/render/math?math=\gamma = \dfrac{\text{Pace}_{lg}}{\text{Pace}_{tm}}">
 
