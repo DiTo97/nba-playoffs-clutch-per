@@ -36,7 +36,7 @@ Thirdly, and finally, a league adjustment is performed to allow fairer compariso
 
 where <img src="https://render.githubusercontent.com/render/math?math=\text{aPER}_{lg}"> is the league-average aPER given by weighted averaging the aPER of all the players in the league.
 
-To summerize, the PER model is a multi-step ensemble, but not that complex in interpretation. At least, not for anything that is not called uPER. In the next section, we will dissect the uPER formula analyzing it term by term.
+To summerize, the PER model is a multi-step ensemble, but not that complex in interpretation. At least, not for anything that is not called uPER. In the next section, we will dissect the uPER formula analyzing the meaning of (1), (2) and (3) term by term.
 
 ## Breakdown of the uPER Formula
 
