@@ -30,13 +30,13 @@ The resulting quantity is called **adjusted PER**, and is given by:
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{aPER} = \text{uPER} * \gamma">
 
-Thirdly, and finally, a league adjustment is performed to allow fairer comparisons of the PER across years. Such adjustment enforces a value of <img src="https://render.githubusercontent.com/render/math?math=15"> to always represent the mean of the league PER. As a result, the formula for PER is given by:
+Thirdly, and finally, a league adjustment is performed to allow fairer comparisons of the PER across years. Such adjustment enforces a value of <img src="https://render.githubusercontent.com/render/math?math=15"> to always represent the league-average PER. As a result, the formula for PER is given by:
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{PER} = \text{aPER} \dfrac{15}{\text{aPER}_{lg}}">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\text{aPER}_{lg}"> is the league aPER given by weighted averaging the aPER of all the players in the league.
+where <img src="https://render.githubusercontent.com/render/math?math=\text{aPER}_{lg}"> is the league-average aPER given by weighted averaging the aPER of all the players in the league.
 
-As we have seen, the PER model is long, but not complex. At least, for anything that is not called uPER. In the next section, we will dissect the uPER formula analyzing it term by term.
+As we have seen, the PER model is a multi-step ensemble of pieces, but not that complex. At least, for anything that is not called uPER. In the next section, we will dissect the uPER formula analyzing it term by term.
 
 ## Breakdown of the uPER Formula
 
