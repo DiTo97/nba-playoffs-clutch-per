@@ -10,7 +10,7 @@ The PER model is constructed in a multi-step fashion. First, a player's **unadju
 
 <img src="https://render.githubusercontent.com/render/math?math=\begin{align} \text{uPER} =%26 \dfrac{(1) - (2) %2B (3)}{\text{Min}} \notag \\ \\ \\ \\ (1) =%26 3\text{PM} %2B \dfrac{2}{3}\text{Ast} %2B \left(2 - f \dfrac{\text{Ast}_{tm}}{\text{FGM}_{tm}}\right)\text{FGM} %2B \dfrac{1}{2}\text{FTM} \left(2 - \dfrac{1}{3}\dfrac{\text{Ast}_{tm}}{\text{FGM}_{tm}} \right) \\ \\ (2) =%26 \dfrac{\text{PF}}{\text{PF}_{lg}}\text{FTM}_{lg} \\ \\ (3) =%26 v\left( (\text{Reb} - \text{OReb}) %2B d\text{OReb} -\text{TO} -d\left( \text{FGA} - \text{FGM} \right) -0.44(0.44 %2B 0.56d)(\text{FTA} - \text{FTM}) %2B \text{Stl} %2B d\text{Blk} %2B 0.44 \text{FTA}_{lg} \dfrac{\text{PF}}{\text{PF}_{lg}} \right) \end{align}">
 
-where <img src="https://render.githubusercontent.com/render/math?math=tm"> and <img src="https://render.githubusercontent.com/render/math?math=lg"> are suffixes labelling team- and league-average metrics, respectively, as opposed to player averages. About the scaling factors, <img src="https://render.githubusercontent.com/render/math?math=f"> is an unknown factor regulating the assist-to-point conversion, <img src="https://render.githubusercontent.com/render/math?math=d"> is the defensive rebound percentage, and <img src="https://render.githubusercontent.com/render/math?math=v"> is the value for possession, that is, the average # of points per possession. The latter three are defined as follows:
+where <img src="https://render.githubusercontent.com/render/math?math=tm"> and <img src="https://render.githubusercontent.com/render/math?math=lg"> are suffixes labelling team- and league-average metrics, respectively, as opposed to player averages. About the league-average scaling factors, <img src="https://render.githubusercontent.com/render/math?math=f"> is an unknown factor regulating the assist-to-point conversion, <img src="https://render.githubusercontent.com/render/math?math=d"> is the defensive rebound percentage, and <img src="https://render.githubusercontent.com/render/math?math=v"> is the value for possession, that is, the average number of points per possession. The latter three are defined as follows:
 
 <img src="https://render.githubusercontent.com/render/math?math=f = \dfrac{2}{3} - \left( 0.25 \dfrac{\text{Ast}_{lg}}{\text{FGM}_{lg}} \dfrac{\text{FTM}_{lg}}{\text{FGM}_{lg}}  \right)">
  
@@ -18,7 +18,7 @@ where <img src="https://render.githubusercontent.com/render/math?math=tm"> and <
 
 <img src="https://render.githubusercontent.com/render/math?math=d = \dfrac{\text{DReb}_{lg}}{\text{Reb}_{lg}}">
 
-Most other terms should be familiar to people with a decent experience in basketball, as they are all commonly registered in the box score of NBA games. The model looks torturous at first glance; however, it is not all that bad. Later, we will break it down term by term.
+Most other terms should be familiar to people with a decent experience in basketball, as they are all commonly registered in NBA box scores. The model looks torturous at first glance; however, it is not all that bad. Later, we will break it down term by term.
 
 Secondly, a **pace adjustment**, <img src="https://render.githubusercontent.com/render/math?math=\gamma"> is performed to allow for fair comparisons between up-tempo and down-tempo teams in the league. This adjustment is given by:
 
